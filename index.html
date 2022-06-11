@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a href="/" class="logo-link link">
+          <a href="./index.html" class="logo-link link">
             <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
           </a>
           <ul class="nav-list list">
@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -425,5 +425,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
